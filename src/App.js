@@ -9,7 +9,7 @@ export default function App() {
         <Jumbotron direction={item.direction} key={item.id}>
           <Jumbotron.Pane>
             <Jumbotron.Title>{item.title}</Jumbotron.Title>
-            <Jumbotron.subTitle>{item.subTitle}</Jumbotron.subTitle>
+            <Jumbotron.SubTitle>{item.subTitle}</Jumbotron.SubTitle>
           </Jumbotron.Pane>
           <Jumbotron.Pane>
             <Jumbotron.Image src={item.image} alt={item.alt}/>

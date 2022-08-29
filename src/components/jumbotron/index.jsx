@@ -3,7 +3,7 @@ import { Inner, Container, SubTitle, Title, Image, Pane } from "./styles/jumbotr
 
 export default function Jumbotron({children, direction = 'row', ...restProps}) {
     return (
-        <Inner direction = {direction}>
+        <Inner direction = {direction} {...restProps}>
             {children}
         </Inner>
     )
