@@ -3,7 +3,7 @@ import {Item, Inner, Container, SubTitle, Title, Image, Pane } from "./styles/ju
 
 export default function Jumbotron({children, direction = 'row', ...restProps}) {
     return (
-        <Item direction = {direction}>
+        <Item direction = {direction} {...restProps}>
             <Inner>
                 {children}
             </Inner>
@@ -12,9 +12,10 @@ export default function Jumbotron({children, direction = 'row', ...restProps}) {
 }
 
 Jumbotron.Container = function JumbotronContainer({children, ...restProps}) {
-    return <Container {...restProps}>
+    return (
+    <Container {...restProps}>
         {children}
-    </Container>
+    </Container>)
 }
 
 Jumbotron.Pane = function JumbotronPane({children, ...restProps}) {
