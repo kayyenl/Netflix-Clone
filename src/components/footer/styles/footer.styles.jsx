@@ -24,6 +24,10 @@ export const Row = styled.div`
     grid-gap: 15px;
 
     @media (max-width: 1000px) {
-        
+        grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
     }
+`
+
+export const Link = styled.a`
+    
 `
